@@ -1,5 +1,5 @@
 #include <SoftwareSerial.h>
-SoftwareSerial mySerial(4, 2); // RX, TX
+SoftwareSerial mySerial(2, 4); // RX, TX
 
 String command = ""; // Stores response of the HC-06 Bluetooth device
 
