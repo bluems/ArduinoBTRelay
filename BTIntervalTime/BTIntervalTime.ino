@@ -4,9 +4,12 @@
 #define TRUE 1
 #define FALSE 0
 
+#define ledPin 6
+#define relay 7
+
 LiquidCrystal lcd( 8,9,10,11,12,13 );
-SoftwareSerial bluetooth( 6, 7 ); // TX, RX
-const int ledPin = 2;  int relay = 4;
+SoftwareSerial bluetooth( 4, 2 ); // TX, RX
+//const int ledPin = 6;  int relay = 7; 
 
 char  BRchar;   
 String BRString = "";
@@ -26,7 +29,7 @@ void setup() {
   pinMode(relay, OUTPUT);  
   lcd.begin(16, 2);
   Serial.begin(9600);  
-  bluetooth.begin(9600);  
+  bluetooth.begin(57600);  
   Display_Text( 0, "Welcome Delphi.." );
 
   digitalWrite(ledPin, HIGH);  // 시작시 On
