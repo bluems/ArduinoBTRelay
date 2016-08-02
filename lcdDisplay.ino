@@ -13,7 +13,7 @@ void setup() {
   Display_Text( 0, "Welcome Delphi.." );
   
   // The HC-06 defaults to 9600 according to the datasheet.
-  mySerial.begin(9600);
+  mySerial.begin(57600);
 }
 
 void loop() {
